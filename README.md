@@ -1,11 +1,11 @@
 # An apps script mail merger application
 
 This apps script code:
-- Reads a draft email text from Gmail.
+- Reads a specific Gmail draft based on the subject line.
 - Reads first names and corresponding email addresses from a google sheet.
-- sends the draft email text to all email addresses listed in the google sheet.
-- timestamps the sending of the email per row in the google sheet. 
-- only sends emails to email addresses without send timestamp.
+- Sends the draft email text to all email addresses listed in the google sheet using the first names in the google sheets column.
+- When the email is sent to a specific email address a timestamp will be placed in the corresponding row in the google sheet. 
+- The code makes sure emails will not be sent multiple times to the same address: When the code reruns, it'll only send the email to addresses that do not have a timestamp.
 
 ## draft email template
 
