@@ -46,7 +46,7 @@ function sendEmails() {
     
     var recipients = [recipient1, recipient2];
     
-    var htmlBody = draftBody.replace("<<Voornaam>>", firstName);
+    var htmlBody = draftBody.replace("<<FirstName>>", firstName);
     
     if(recipients && !timestamp) {
       GmailApp.sendEmail(
