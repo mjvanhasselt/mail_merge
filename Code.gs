@@ -1,17 +1,10 @@
 /** @OnlyCurrentDoc */
 
-// Returns quota
-function mailquotum() {
-  
-  Logger.log(MailApp.getRemainingDailyQuota());
-  
-}
+// Returns my draft email text. 
+// This email with subject should saved in the drafts folder of Gmail.
 
-
-// Returns my draft text.
 function getDraftBody(draftName) {
-  
-  //var draftName = "template01";
+
   var drafts = GmailApp.getDraftMessages();
   
   for (var i in drafts)
@@ -19,7 +12,8 @@ function getDraftBody(draftName) {
       return drafts[i].getPlainBody();
 }
 
-// the function that sends my emails
+// This function sends the email to recipients defined in two columns of an google sheets.
+// The function only sends emails to recipients when the send timestamp does not exist yet.
 function sendEmails() {
   
   // email list sheet column numbers, 0 based
