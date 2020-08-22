@@ -9,13 +9,13 @@ This apps script code:
 
 ## draft email template
 
-Lieve <<Voornaam>>,
-<br/>
-<br/>
-EMAIL TEXT
-<br/>
-<br/>
-Groeten,
-<br/>
-<br/>
-Name sender
+    Hello <<Voornaam>>,
+    <br/>
+    <br/>
+    EMAIL TEXT
+    <br/>
+    <br/>
+    Kind regards,
+    <br/>
+    <br/>
+    Name sender
