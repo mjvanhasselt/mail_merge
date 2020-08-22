@@ -9,7 +9,7 @@ This apps script code:
 
 ## draft email template
 
-    Hello <<Voornaam>>,
+    Hello <<FirstName>>,
     <br/>
     <br/>
     EMAIL TEXT
